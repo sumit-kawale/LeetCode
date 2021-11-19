@@ -39,7 +39,7 @@ class Solution {
     }
     public int count(int i, int j, int[][] board){
         int count = 0;
-        
+        /* Following directions are to parse the neighbouring cells of the given cell. down, up, right, down-right, up-right, down-left, up-left, left  */
         int[][] direction={{0,-1},{0,1},{1,0},{1,-1},{1,1},{-1,-1},{-1,1},{-1,0}};
         for(int[] dir:direction){
             int x=i+dir[0];
